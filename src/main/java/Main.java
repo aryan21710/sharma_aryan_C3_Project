@@ -24,7 +24,7 @@ public class Main {
     resService.addRestaurant("ShantiSagar", "MG road", LocalTime.of(9, 30, 00), LocalTime.of(21, 00, 00));
     resService.addRestaurant("Tandoor", "Koramangala", LocalTime.of(9, 30, 00), LocalTime.of(21, 00, 00));
 
-    Restaurant foundRes = resService.findRestaurantByName("ShantiSaga");
+    Restaurant foundRes = resService.findRestaurantByName("ShantiSagar");
     foundRes.addToMenu("Lasagne", 200);
     foundRes.addToMenu("Mushroom 65", 50);
     foundRes.addToMenu("Paneer 65", 100);
