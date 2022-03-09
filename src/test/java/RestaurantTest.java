@@ -72,5 +72,17 @@ class RestaurantTest {
     }
     // <<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    
+    // <<<<<<<<<<<<<<<<<<<< CALCULATE TOTAL PRICE>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    @Test
+    public void calculate_total_price_of_order_when_correct_price_is_expected() {
+        int orderValue = restaurant.calculateTotalPrice(itemsOrdered);
+        assertEquals(380, orderValue);
+    }
+
+    @Test
+    public void calculate_total_price_of_order_when_incorrect_price_is_expected() {
+        int orderValue = restaurant.calculateTotalPrice(itemsOrdered);
+        assertNotEquals(0, orderValue);
+    }
 }
